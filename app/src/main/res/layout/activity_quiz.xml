@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityQuiz">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="459dp"
+        android:layout_height="824dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg3" />
+
+    <Button
+        android:id="@+id/BT1"
+        android:layout_width="230dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="316dp"
+        android:background="@drawable/custom_enterbutton"
+        android:text="KLIKNIJ"
+        android:textSize="30sp"
+        app:fontFamily="@font/rubik_mono_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuiz"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewQuiz"
+        android:layout_width="312dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="88dp"
+        android:includeFontPadding="false"
+        android:text="TU MIAŁ BY QUIZ"
+        android:textSize="46sp"
+        app:fontFamily="@font/rubik_mono_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <WebView
+        android:id="@+id/webViewCat"
+        android:layout_width="247dp"
+        android:layout_height="214dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuiz"
+        app:layout_constraintVertical_bias="0.763" />
+
+    <TextView
+        android:id="@+id/textViewPlease"
+        android:layout_width="311dp"
+        android:layout_height="107dp"
+        android:text="Bardzo przepraszam za brak Quizu. Niestety zwariował mi komputer i zaczął wywalać błędy podczas pracy z bazą danych"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/webViewCat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuiz" />
+
+    <ImageView
+        android:id="@+id/imageViewCat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPlease"
+        app:srcCompat="@drawable/cat2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="459dp"
+        android:layout_height="824dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg2" />
+
+    <Button
+        android:id="@+id/button111"
+        style="@style/AppTheme"
+        android:layout_width="214dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/custom_enterbutton"
+        android:drawableTop="@drawable/ic_aboutme"
+        android:text="O STUDENCIE"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button333"
+        style="@style/AppTheme"
+        android:layout_width="214dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/custom_enterbutton"
+        android:drawableTop="@drawable/ic_ytlogo"
+        android:text="FILMIK NA YT"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button222"
+        style="@style/AppTheme"
+        android:layout_width="214dp"
+        android:layout_height="62dp"
+        android:background="@drawable/custom_enterbutton"
+        android:drawableTop="@drawable/ic_quiz"
+        android:text="QUIZ"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button111" />
+</androidx.constraintlayout.widget.ConstraintLayout>
